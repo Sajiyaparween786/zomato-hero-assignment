@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    .header{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .content
+    {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    }
+    .heading2{
+        position: absolute;
+        top: 30%;
+        justify-content: center;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .heading3{
+        position: absolute;
+        top: 45%;
+        color: white;
+        font-weight: bold; 
+        text-align: center;
+    }
+    .para{
+        position: absolute;
+        top: 56%;
+        color: white;
+        font-weight: bold; 
+        text-align: center;
+        justify-content: center;
+    }
+    .buttons{
+        position: absolute;
+        display: inline;
+        top: 60%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 35px;
+        
+    }
+
+    .app-logo img{
+        display: inline-flex;
+        height: 30px;
+        width: 30px;
+        padding: 5px;
+        padding-left: 0px;
+        padding-right: 10px;
+
+    }
+
+    .play-store,
+    .app-store{
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 12px 25px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+        display: flex;
+        padding-bottom: 10px;
+    }
+    .small-text{
+        font-size: 10px;
+        display: inline;
+        align-items: center;
+        
+    }
+    .small-text h3{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    
+    
+  </style>
+
+</head>
+<body>
+    <div class="header">
+        <video autoplay muted loop>
+            <source src="https://b.zmtcdn.com/data/file_assets/2627bbed9d6c068e50d2aadcca11ddbb1743095810.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <div class="heading2">
+                 <h1>Zomato</h1>
+            </div>
+
+            <div class="heading3">
+                <h1> India's #1 <br>
+                food delivery app</h1>
+            </div>
+
+            <div class="para">
+              <p>Experience fast & easy online ordering <br>
+                on the zomato app</p>
+            </div>
+
+            
+            <div class="buttons">
+                <div class="play-store">
+                    <div class="app-logo">
+                        <img src="https://i.pinimg.com/originals/54/3c/a2/543ca23cab31f45707a6d7ed58d05f8c.jpg">
+                    </div>
+                    <div class="small-text">
+                        <p>GET IT ON</p>
+                        <h3>Google Play</h3>
+                    </div>
+            
+                </div>
+                <div class="app-store">
+                    <div class="app-logo">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.oRHnImi9ePYhAGib8VdjxwHaH_?r=0&pid=Api&P=0&h=180">
+                    </div>
+                    <div class="small-text">
+                        <p>Download on the</p>
+                        <h3>App store</h3>
+                </div>
+            </div>
+       </div>
+    </div>    
+
+        
+</body>
+</html>
