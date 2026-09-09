@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+   
   <style>
     *{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+       border-color: #e5e7eb;
     }
+    body{
+        font-family: "Poppins", sans-serif;
+    }
+
+
     .header{
         position: relative;
         width: 100%;
         height: 100vh;
-        overflow: hidden;
+    
     }
     video{
         width: 100%;
@@ -35,7 +45,7 @@
         color: white;
         font-weight: bold;
         font-style: italic;
-        font-size: 50px;
+        font-size: 45px;
         margin-bottom: 10px;
     }
     .heading3{
@@ -52,6 +62,7 @@
         font-weight: bold; 
         text-align: center;
         justify-content: center;
+        padding-top: 13px;
     }
     .buttons{
         position: absolute;
@@ -61,7 +72,6 @@
         justify-content: center;
         gap: 20px;
         margin-top: 35px;
-        
     }
 
     .app-logo img{
@@ -95,12 +105,235 @@
         font-weight: bold;
         font-size: 20px;
     }
+    .container{
+        background-color: white;
+        height: 800px;
+        position: relative;
+        overflow-x: hidden;
+    }
+    .container h1{
+        color: rgb(239 79 95);
+        font-size: 60px;
+        text-align: center;
+        font-weight: 700px;
+        padding-top: 300px;
+    }
+    .container p{
+        font-weight: 300px;
+        text-align: center;
+        color: rgb(89 99 120 );
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    .img-burger{
+        /* position: absolute;
+        top: 150px; */
     
+        left: 200px;
+    }
     
-  </style>
+    .img-burger img{
+        height: 230px;
+        width: 230px;
+        position: absolute;
+        top: 300px;
+        left: 280px;
+    }
+    .img-line1 img{
+        position: absolute;
+        top: 90px;
+        height: 700px;
+        width: 600px;
+        left: -250px;
+    }
+    .img-leaf img{
+        position: absolute;
+        top: 130px;
+        left: 439px;
+        height: 50px;
+        width: 60px;
+    }
+    .img-tomato img{
+        position: absolute;
+        top: 600px;
+        left: 200px;
+        height: 50px;
+        width: 45px;
+    }
+    .img-line2 img{
+        position: absolute;
+        top: 90px;
+        height: 700px;
+        width: 600px;
+        right: -250px;
+    }
+    .img-momos img{
+        position: absolute;
+        top: 130px;
+        right: 250px;
+        height: 230px;
+        width: 230px;
+    }
+    .img-pizza img{
+        position: absolute;
+        top: 500px;
+        right: 220px;
+        height: 230px;
+        width: 230px;
+    }
+    .img-tomato1 img{
+        position: absolute;
+        top: 400px;
+        right: 180px;
+        height: 50px;
+        width: 45px;
+    }
+.stats-section{
+    width:1000px;
+    height:145px;
+    background:#ffffff;
+    margin:60px auto;
+    padding:0 35px;
+    border-radius:35px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:
+    0 0 0 1px rgba(255, 92, 92, 0.08),
+    0 8px 25px rgba(0,0,0,0.03);
+}
+.stats-item{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 35px;
+}
+.stats-divider{
+    width:1px;
+    height:80px;
+    background:#ececec;
+}
+.stats-text h2{
+    margin:0;
+    font-size:30px;
+    font-weight:700;
+    color:#5f6782;
+    line-height:1;
+   
+}
+.stats-text p{
+    margin-top:8px;
+    font-size:18px;
+    font-weight:400;
+    color:#7a8097;
+}
+.stats-icon img{
+    width:75px;
+    height:90px;
+    display:block;
+}
+
+ .feature-section{
+    background:LavenderBlush;
+    min-height:100vh;
+    text-align:center;
+    padding-top:70px;
+}
+
+.feature-section h1{
+    font-size:60px;
+    font-weight:700;
+    color:LightCoral;
+    line-height:1.1;
+}
+
+.subtitle{
+    margin-top:20px;
+    font-size:24px;
+    color:SlateGray;
+    line-height:1.5;
+}
+
+.feature-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:70px;
+    margin-top:60px;
+}
+.left-features,
+.right-features{
+    display:grid;
+    grid-template-columns:repeat(2,120px);
+    gap:20px;
+}
+
+.card{
+    width:120px;
+    height:120px;
+    background:white;
+    border-radius:22px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.card img{
+    width:98px;
+    height: 100;
+    margin-bottom:10px;
+}
+
+.card span{
+    font-size:14px;
+    color:#444;
+    font-weight:600;
+}
+.mobile{
+    position:relative;
+}
+
+.mobile img{
+    width:280px;
+}
+.schedule-card{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:140px;
+    height:140px;
+    background:white;
+    border-radius:24px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.schedule-card img{
+    width:50px;
+    margin-bottom:10px;
+}
+
+.schedule-card p{
+    font-size:18px;
+    color:#444;
+    font-weight:600;
+}
+
+
+
+
+</style>
 
 </head>
 <body>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <div class="header">
         <video autoplay muted loop>
             <source src="https://b.zmtcdn.com/data/file_assets/2627bbed9d6c068e50d2aadcca11ddbb1743095810.mp4" type="video/mp4">
@@ -142,8 +375,156 @@
                 </div>
             </div>
        </div>
-    </div>    
+    </div> 
+    <div class="container">
+        <h1>Better food for <br>
+            more people</h2>
+        <p>For over a decade, we’ve enabled our <br>customers to discover new tastes,<br> delivered right to their doorstep</p>
+        <div class="img-line1">
+            <img src="https://b.zmtcdn.com/data/o2_assets/901001826baf04838b1bf505176ff0b11742453501.png">
+        </div>
+        <div class="img-burger">
+            <img src="https://b.zmtcdn.com/data/o2_assets/110a09a9d81f0e5305041c1b507d0f391743058910.png">
+        </div>
+        <div class="img-leaf">
+            <img src="https://b.zmtcdn.com/data/o2_assets/70b50e1a48a82437bfa2bed925b862701742892555.png">
+        </div>
+        <div class="img-tomato">
+            <img src="https://b.zmtcdn.com/data/o2_assets/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png">
+        </div>
+        <div class="img-line2">
+            <img src="https://b.zmtcdn.com/data/o2_assets/901001826baf04838b1bf505176ff0b11742453501.png">
+        </div>
+        <div class="img-momos">
+            <img src="https://b.zmtcdn.com/data/o2_assets/b4f62434088b0ddfa9b370991f58ca601743060218.png">
+        </div>
+        <div class="img-pizza">
+            <img src="https://b.zmtcdn.com/data/o2_assets/316495f4ba2a9c9d9aa97fed9fe61cf71743059024.png">
+        </div>
+        <div class="img-tomato1">
+            <img src="https://b.zmtcdn.com/data/o2_assets/9ef1cc6ecf1d92798507ffad71e9492d1742892584.png">
+        </div>
+    </div>  
 
-        
+    <section class="stats-section">
+
+    <div class="stats-item">
+        <div class="stats-text">
+            <h2>3,00,000+</h2>
+            <p>restaurants</p>
+        </div>
+
+        <div class="stats-icon">
+            <img src="https://b.zmtcdn.com/data/o2_assets/d19ec60986487a77bcb026e5efc3325f1742908200.png" alt="Store">
+        </div>
+    </div>
+
+    <div class="stats-divider"></div>
+
+    <div class="stats-item">
+        <div class="stats-text">
+            <h2>800+</h2>
+            <p>cities</p>
+        </div>
+
+        <div class="stats-icon">
+            <img src="https://b.zmtcdn.com/data/o2_assets/e7533c4081d6140da37b9f430cb7b8051743006192.png" alt="Location">
+        </div>
+    </div>
+
+    <div class="stats-divider"></div>
+
+    <div class="stats-item">
+        <div class="stats-text">
+            <h2>3 billion+</h2>
+            <p>orders delivered</p>
+        </div>
+
+        <div class="stats-icon">
+            <img src="https://b.zmtcdn.com/data/o2_assets/713443cc5944ce4284d7e49e75e2aacf1742466222.png" alt="Orders">
+        </div>
+    </div>
+</section> 
+
+<section class="feature-section">
+
+    <h1>What's waiting for you <br> on the app?</h1>
+
+    <p class="subtitle">
+        Our app is packed with features that <br>
+        enable you to experience food <br>
+        delivery like never before
+    </p>
+
+    <div class="feature-container">
+
+        <!-- Left Side -->
+        <div class="left-features">
+
+            <div class="card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/d0f1639403f80f8f2c19e0d538222e661742455804.png" alt="">
+                <span>Healthy</span>
+            </div>
+
+            <div class="card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/82f145180cd6f920a8a8617dda366a0a1742455963.png" alt="">
+                <span>Veg Mode</span>
+            </div>
+
+            <div class="card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/5e7aab0f183b36fc12c29279f0cb55181742462245.png" alt="">
+                <span>Plan a Party</span>
+            </div>
+
+            <div class="card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/867f86a10503998e437963bb37c451591742455764.png" alt="">
+                <span>Gift Cards</span>
+            </div>
+
+        </div>
+
+        <!-- Center Mobile -->
+        <div class="mobile">
+
+            <img src="https://b.zmtcdn.com/data/o2_assets/3f7e2757e62fd22592b879bd56b666011742294630.png" alt="">
+
+            <div class="schedule-card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/cc1caf220c91be38dd94cce12b416fcd1746550226.png" alt="">
+                <p>Schedule<br>your order</p>
+            </div>
+
+        </div>
+
+        <!-- Right Side -->
+        <div class="right-features">
+
+            <div class="card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/6e27c9acde6045c272a28e6eb275727e1742455789.png" alt="">
+                <span>Gourmet</span>
+            </div>
+
+            <div class="card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/813952c961fd13588cb71867d84ea7dc1742455815.png" alt="">
+                <span>Offers</span>
+            </div>
+
+            <div class="card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/06d090307e02772693ac06123b53459b1742455939.png" alt="">
+                <span>Food on Train</span>
+            </div>
+
+            <div class="card">
+                <img src="https://b.zmtcdn.com/data/o2_assets/5e973dd10c387878009c66d625ae541a1746550690.png" alt="">
+                <span>Collections</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>   
 </body>
 </html>
